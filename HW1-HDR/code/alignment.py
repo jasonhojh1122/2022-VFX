@@ -16,10 +16,10 @@ def Align(imgs) -> list[int]:
         mid = np.median(resized)
         masks.append(cv2.inRange(resized, mid - BITMAP_THRESH_OFFSET, mid + BITMAP_THRESH_OFFSET))
         centerBitMaps.append(CreateBitMap(resized))
-    cv2.imshow('mask', masks[0])
-    cv2.waitKey(0)
-    cv2.imshow('bit', centerBitMaps[0])
-    cv2.waitKey(0)
+    # cv2.imshow('mask', masks[0])
+    # cv2.waitKey(0)
+    # cv2.imshow('bit', centerBitMaps[0])
+    # cv2.waitKey(0)
 
     shifts = []
 
